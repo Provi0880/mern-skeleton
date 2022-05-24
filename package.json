@@ -1,0 +1,29 @@
+{
+  "name": "mern-skeleton",
+  "version": "1.0.0",
+  "description": "Server Side Application",
+  "main": "index.js",
+  "repository": "git@github.com:Provi0880/mern-skeleton.git",
+  "author": "Provi0880 <thierryprovidence@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "development": "nodemon"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "babel-loader": "^8.2.5",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "helmet": "^5.1.0",
+    "mongoose": "4.4.0"
+  }
+}
