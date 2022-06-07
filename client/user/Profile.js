@@ -55,6 +55,10 @@ export default function Profile({ match }) {
     }
 
   }, [match.params.userId])
+
+      const photoUrl = values.user._id
+        ? `/api/users/photo/${values.user._id}?${new Date().getTime()}`
+        : '/api/users/defaultphoto'
   
     if (redirectToSignin) {
       return <Redirect to='/signin'/>
@@ -82,6 +86,7 @@ export default function Profile({ match }) {
                 <DeleteUser userId={user._id}/>
               </ListItemSecondaryAction>)
             }
+            <ListItemText primary={this.state.user.about}/>
           </ListItem>
           <Divider/>
           <ListItem>
